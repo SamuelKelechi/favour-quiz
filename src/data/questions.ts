@@ -9,281 +9,361 @@ export type Question = {
 export const questions: Question[] = [
   {
     id: 1,
-    question: "What is Python?",
-    options: [
-      "A. A programming language",
-      "B. A web browser",
-      "C. An operating system",
-      "D. A database",
-    ],
-    answer: "A",
-    explanation:
-      "Python is a high-level programming language used for software development, automation, data analysis, AI, and many other applications.",
-  },
 
-  {
-    id: 2,
-    question: "Which function is used to display output in Python?",
-    options: [
-      "A. input()",
-      "B. print()",
-      "C. output()",
-      "D. display()",
-    ],
-    answer: "B",
-    explanation:
-      "The print() function is used to display text, numbers, variables, and other information on the screen.",
-  },
+    question: "Which symbol is used to create a set in Python?",
 
-  {
-    id: 3,
-    question: "Which data type is used to store text?",
-    options: [
-      "A. int",
-      "B. float",
-      "C. str",
-      "D. bool",
-    ],
-    answer: "C",
-    explanation:
-      "The str data type represents strings, which are used to store text such as names and sentences.",
-  },
-
-  {
-    id: 4,
-    question: "Which data type stores True or False?",
-    options: [
-      "A. str",
-      "B. bool",
-      "C. float",
-      "D. int",
-    ],
-    answer: "B",
-    explanation:
-      "A Boolean (bool) value can only be True or False.",
-  },
-
-  {
-    id: 5,
-    question: "Which symbol is used to create a list?",
-    options: [
-      "A. ()",
-      "B. {}",
-      "C. []",
-      "D. <>",
-    ],
-    answer: "C",
-    explanation:
-      "Python lists are created using square brackets, for example: scores = [75, 80, 90].",
-  },
-
-  {
-    id: 6,
-    question: "What is the index of the first item in a Python list?",
-    options: [
-      "A. 0",
-      "B. 1",
-      "C. -1",
-      "D. 2",
-    ],
-    answer: "A",
-    explanation:
-      "Python uses zero-based indexing, meaning the first item has index 0.",
-  },
-
-  {
-    id: 7,
-    question: "Which method adds an item to the end of a list?",
-    options: [
-      "A. add()",
-      "B. insert()",
-      "C. append()",
-      "D. push()",
-    ],
-    answer: "C",
-    explanation:
-      "The append() method adds a new item to the end of a Python list.",
-  },
-
-  {
-    id: 8,
-    question: "Which function returns the number of items in a list?",
-    options: [
-      "A. count()",
-      "B. size()",
-      "C. length()",
-      "D. len()",
-    ],
-    answer: "D",
-    explanation:
-      "The len() function returns the number of items in a list.",
-  },
-
-  {
-    id: 9,
-    question: "Which function finds the highest value in a list?",
-    options: [
-      "A. high()",
-      "B. max()",
-      "C. highest()",
-      "D. top()",
-    ],
-    answer: "B",
-    explanation:
-      "The max() function returns the largest value in a collection of values.",
-  },
-
-  {
-    id: 10,
-    question: "Which function calculates the total of numbers in a list?",
-    options: [
-      "A. total()",
-      "B. add()",
-      "C. sum()",
-      "D. calculate()",
-    ],
-    answer: "C",
-    explanation:
-      "The sum() function adds together the numeric values in an iterable such as a list.",
-  },
-
-  {
-    id: 11,
-    question: "Which data structure cannot be changed after creation?",
-    options: [
-      "A. List",
-      "B. Tuple",
-      "C. Set",
-      "D. Variable",
-    ],
-    answer: "B",
-    explanation:
-      "Tuples are immutable, meaning their contents cannot be changed after they are created.",
-  },
-
-  {
-    id: 12,
-    question: "Which data structure stores only unique values?",
-    options: [
-      "A. List",
-      "B. Tuple",
-      "C. Set",
-      "D. String",
-    ],
-    answer: "C",
-    explanation:
-      "A Python set stores unique values and automatically removes duplicates.",
-  },
-
-  {
-    id: 13,
-    question: "Which brackets are commonly used to create a tuple?",
     options: [
       "A. []",
       "B. {}",
       "C. ()",
       "D. <>",
     ],
-    answer: "C",
+
+    answer: "B",
+
     explanation:
-      "Tuples are commonly written using parentheses, for example: student = ('Favour', 15).",
+      "Sets are commonly created using curly braces {}. For example: fruits = {'apple', 'banana', 'orange'}.",
+  },
+
+  {
+    id: 2,
+
+    question: "Which of the following is a valid Python set?",
+
+    options: [
+      "A. [1, 2, 3]",
+      "B. (1, 2, 3)",
+      "C. {1, 2, 3}",
+      "D. <1, 2, 3>",
+    ],
+
+    answer: "C",
+
+    explanation:
+      "A set can be created using curly braces with comma-separated values, such as {1, 2, 3}.",
+  },
+
+  {
+    id: 3,
+
+    question: "What is a major characteristic of a Python set?",
+
+    options: [
+      "A. It allows duplicate values",
+      "B. It stores values in key-value pairs",
+      "C. It does not allow duplicate values",
+      "D. It can only contain strings",
+    ],
+
+    answer: "C",
+
+    explanation:
+      "Sets automatically remove duplicate values. Each value can appear only once in a set.",
+  },
+
+  {
+    id: 4,
+
+    question: "What will be the result of this code? numbers = {1, 2, 2, 3, 3}",
+
+    options: [
+      "A. {1, 2, 2, 3, 3}",
+      "B. {1, 2, 3}",
+      "C. [1, 2, 3]",
+      "D. An error will occur",
+    ],
+
+    answer: "B",
+
+    explanation:
+      "Sets do not store duplicate values, so the repeated 2 and 3 are automatically removed.",
+  },
+
+  {
+    id: 5,
+
+    question: "Which method is used to add an item to a set?",
+
+    options: [
+      "A. add()",
+      "B. append()",
+      "C. insert()",
+      "D. push()",
+    ],
+
+    answer: "A",
+
+    explanation:
+      "The add() method is used to add a new item to a set. For example: numbers.add(5).",
+  },
+
+  {
+    id: 6,
+
+    question: "Which method can be used to remove an item from a set?",
+
+    options: [
+      "A. delete()",
+      "B. remove()",
+      "C. erase()",
+      "D. clearOne()",
+    ],
+
+    answer: "B",
+
+    explanation:
+      "The remove() method removes a specified item from a set. For example: fruits.remove('apple').",
+  },
+
+  {
+    id: 7,
+
+    question: "What does the len() function return when used with a set?",
+
+    options: [
+      "A. The largest value",
+      "B. The smallest value",
+      "C. The number of items in the set",
+      "D. The total of all values",
+    ],
+
+    answer: "C",
+
+    explanation:
+      "The len() function returns the number of items contained in the set.",
+  },
+
+  {
+    id: 8,
+
+    question: "What will this code print? fruits = {'apple', 'banana'}; fruits.add('orange'); print(fruits)",
+
+    options: [
+      "A. Only apple and banana",
+      "B. apple, banana, and orange",
+      "C. An empty set",
+      "D. An error",
+    ],
+
+    answer: "B",
+
+    explanation:
+      "The add() method adds 'orange' to the existing set, so the set will contain apple, banana, and orange.",
+  },
+
+  {
+    id: 9,
+
+    question: "Which keyword can be used to check if an item exists in a set?",
+
+    options: [
+      "A. has",
+      "B. contains",
+      "C. in",
+      "D. exists",
+    ],
+
+    answer: "C",
+
+    explanation:
+      "The 'in' keyword checks whether a value exists in a set. For example: 'apple' in fruits.",
+  },
+
+  {
+    id: 10,
+
+    question: "What is a Python dictionary?",
+
+    options: [
+      "A. A collection of key-value pairs",
+      "B. A collection that only stores numbers",
+      "C. A programming function",
+      "D. A type of loop",
+    ],
+
+    answer: "A",
+
+    explanation:
+      "A dictionary stores data as key-value pairs. For example: student = {'name': 'Favour', 'score': 85}.",
+  },
+
+  {
+    id: 11,
+
+    question: "Which brackets are used to create a Python dictionary?",
+
+    options: [
+      "A. []",
+      "B. ()",
+      "C. {}",
+      "D. <>",
+    ],
+
+    answer: "C",
+
+    explanation:
+      "Python dictionaries are written using curly braces {} with keys and values separated by a colon.",
+  },
+
+  {
+    id: 12,
+
+    question: "In the dictionary below, what is 'name'? student = {'name': 'Favour', 'score': 85}",
+
+    options: [
+      "A. A value",
+      "B. A key",
+      "C. A function",
+      "D. A variable",
+    ],
+
+    answer: "B",
+
+    explanation:
+      "'name' is the key, while 'Favour' is its corresponding value.",
+  },
+
+  {
+    id: 13,
+
+    question: "How can you access Favour's score in this dictionary? student = {'name': 'Favour', 'score': 85}",
+
+    options: [
+      "A. student[85]",
+      "B. student('score')",
+      "C. student['score']",
+      "D. student.score()",
+    ],
+
+    answer: "C",
+
+    explanation:
+      "Dictionary values are accessed using their keys inside square brackets. Therefore, student['score'] returns 85.",
   },
 
   {
     id: 14,
-    question: "Which method adds an item to a set?",
+
+    question: "What will this code print? student = {'name': 'Favour', 'score': 85}; print(student['name'])",
+
     options: [
-      "A. append()",
-      "B. add()",
-      "C. insert()",
-      "D. push()",
+      "A. name",
+      "B. score",
+      "C. Favour",
+      "D. 85",
     ],
-    answer: "B",
+
+    answer: "C",
+
     explanation:
-      "The add() method is used to add an item to a Python set.",
+      "The key 'name' points to the value 'Favour', so student['name'] returns Favour.",
   },
 
   {
     id: 15,
-    question: "Which operator is used for multiplication?",
+
+    question: "How do you add a new key-value pair to a dictionary?",
+
     options: [
-      "A. +",
-      "B. /",
-      "C. *",
-      "D. %",
+      "A. student.add('age', 16)",
+      "B. student['age'] = 16",
+      "C. student.append('age', 16)",
+      "D. student.insert('age', 16)",
     ],
-    answer: "C",
+
+    answer: "B",
+
     explanation:
-      "The asterisk (*) is the multiplication operator in Python.",
+      "A new dictionary item can be added by assigning a value to a new key, such as student['age'] = 16.",
   },
 
   {
     id: 16,
-    question: "What does the == operator do?",
+
+    question: "Which method is used to remove a specified key-value pair from a dictionary?",
+
     options: [
-      "A. Assigns a value",
-      "B. Compares two values",
-      "C. Multiplies two values",
-      "D. Creates a list",
+      "A. remove()",
+      "B. delete()",
+      "C. pop()",
+      "D. erase()",
     ],
-    answer: "B",
+
+    answer: "C",
+
     explanation:
-      "The == operator checks whether two values are equal.",
+      "The pop() method removes a specified key and its associated value. For example: student.pop('age').",
   },
 
   {
     id: 17,
-    question: "Which statement is used to make a decision?",
+
+    question: "Which dictionary method returns all the keys?",
+
     options: [
-      "A. if",
-      "B. print",
-      "C. input",
-      "D. list",
+      "A. keys()",
+      "B. values()",
+      "C. items()",
+      "D. getkeys()",
     ],
+
     answer: "A",
+
     explanation:
-      "The if statement allows a program to execute code based on whether a condition is true.",
+      "The keys() method returns a view containing all the keys in a dictionary.",
   },
 
   {
     id: 18,
-    question: "Which keyword is used when the if condition is false?",
+
+    question: "Which dictionary method returns all the values?",
+
     options: [
-      "A. otherwise",
-      "B. else",
-      "C. wrong",
-      "D. except",
+      "A. keys()",
+      "B. values()",
+      "C. items()",
+      "D. get()",
     ],
+
     answer: "B",
+
     explanation:
-      "The else block runs when the preceding if condition is false.",
+      "The values() method returns a view containing all the values in a dictionary.",
   },
 
   {
     id: 19,
-    question: "What does input() do?",
+
+    question: "What does the items() method return from a dictionary?",
+
     options: [
-      "A. Displays information",
-      "B. Deletes information",
-      "C. Receives information from the user",
-      "D. Creates a list",
+      "A. Only the keys",
+      "B. Only the values",
+      "C. Key-value pairs",
+      "D. Only the first item",
     ],
+
     answer: "C",
+
     explanation:
-      "The input() function allows a Python program to receive information typed by the user.",
+      "The items() method returns the dictionary's key-value pairs, which can be useful when looping through a dictionary.",
   },
 
   {
     id: 20,
-    question: "What does len(scores) return?",
+
+    question: "What will this code print? student = {'name': 'Favour', 'score': 85}; student['score'] = 90; print(student['score'])",
+
     options: [
-      "A. The highest score",
-      "B. The lowest score",
-      "C. The total score",
-      "D. The number of items",
+      "A. 85",
+      "B. 90",
+      "C. score",
+      "D. An error",
     ],
-    answer: "D",
+
+    answer: "B",
+
     explanation:
-      "len(scores) returns the number of items contained in the scores list.",
+      "Assigning student['score'] = 90 updates the existing score from 85 to 90. Therefore, the program prints 90.",
   },
 ];
