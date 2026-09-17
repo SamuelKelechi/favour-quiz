@@ -10,360 +10,360 @@ export const questions: Question[] = [
   {
     id: 1,
 
-    question: "Which symbol is used to create a set in Python?",
+    question: "What is the main purpose of a conditional statement in Python?",
 
     options: [
-      "A. []",
-      "B. {}",
-      "C. ()",
-      "D. <>",
+      "A. To repeat code",
+      "B. To store multiple values",
+      "C. To make decisions based on conditions",
+      "D. To create a function",
     ],
 
-    answer: "B",
+    answer: "C",
 
     explanation:
-      "Sets are commonly created using curly braces {}. For example: fruits = {'apple', 'banana', 'orange'}.",
+      "Conditional statements allow a program to make decisions and execute different code depending on whether a condition is True or False.",
   },
 
   {
     id: 2,
 
-    question: "Which of the following is a valid Python set?",
+    question: "Which keyword is used to execute code when a condition is True?",
 
     options: [
-      "A. [1, 2, 3]",
-      "B. (1, 2, 3)",
-      "C. {1, 2, 3}",
-      "D. <1, 2, 3>",
+      "A. if",
+      "B. when",
+      "C. check",
+      "D. condition",
     ],
 
-    answer: "C",
+    answer: "A",
 
     explanation:
-      "A set can be created using curly braces with comma-separated values, such as {1, 2, 3}.",
+      "The if keyword is used to check a condition and execute a block of code when that condition is True.",
   },
 
   {
     id: 3,
 
-    question: "What is a major characteristic of a Python set?",
+    question: "What is missing from this Python statement? if age >= 18:",
 
     options: [
-      "A. It allows duplicate values",
-      "B. It stores values in key-value pairs",
-      "C. It does not allow duplicate values",
-      "D. It can only contain strings",
+      "A. A semicolon",
+      "B. A colon",
+      "C. A comma",
+      "D. A bracket",
     ],
 
-    answer: "C",
+    answer: "B",
 
     explanation:
-      "Sets automatically remove duplicate values. Each value can appear only once in a set.",
+      "A colon (:) is required at the end of an if, elif, and else statement before the indented block of code.",
   },
 
   {
     id: 4,
 
-    question: "What will be the result of this code? numbers = {1, 2, 2, 3, 3}",
+    question: "Why is indentation important in Python?",
 
     options: [
-      "A. {1, 2, 2, 3, 3}",
-      "B. {1, 2, 3}",
-      "C. [1, 2, 3]",
-      "D. An error will occur",
+      "A. It makes the program run faster",
+      "B. It identifies which code belongs to a block",
+      "C. It creates variables",
+      "D. It converts text to numbers",
     ],
 
     answer: "B",
 
     explanation:
-      "Sets do not store duplicate values, so the repeated 2 and 3 are automatically removed.",
+      "Python uses indentation to identify blocks of code that belong to statements such as if, elif, else, loops, and functions.",
   },
 
   {
     id: 5,
 
-    question: "Which method is used to add an item to a set?",
+    question: "What does the == operator mean in Python?",
 
     options: [
-      "A. add()",
-      "B. append()",
-      "C. insert()",
-      "D. push()",
+      "A. Assign a value",
+      "B. Not equal to",
+      "C. Equal to",
+      "D. Greater than",
     ],
 
-    answer: "A",
+    answer: "C",
 
     explanation:
-      "The add() method is used to add a new item to a set. For example: numbers.add(5).",
+      "The == operator compares two values and checks whether they are equal. It is different from =, which is used for assignment.",
   },
 
   {
     id: 6,
 
-    question: "Which method can be used to remove an item from a set?",
+    question: "What does the != operator mean?",
 
     options: [
-      "A. delete()",
-      "B. remove()",
-      "C. erase()",
-      "D. clearOne()",
+      "A. Equal to",
+      "B. Greater than",
+      "C. Less than",
+      "D. Not equal to",
     ],
 
-    answer: "B",
+    answer: "D",
 
     explanation:
-      "The remove() method removes a specified item from a set. For example: fruits.remove('apple').",
+      "The != operator checks whether two values are different or not equal.",
   },
 
   {
     id: 7,
 
-    question: "What does the len() function return when used with a set?",
+    question: "What will this code print? score = 75; if score >= 50: print('Pass')",
 
     options: [
-      "A. The largest value",
-      "B. The smallest value",
-      "C. The number of items in the set",
-      "D. The total of all values",
+      "A. Fail",
+      "B. Pass",
+      "C. 75",
+      "D. Nothing",
     ],
 
-    answer: "C",
+    answer: "B",
 
     explanation:
-      "The len() function returns the number of items contained in the set.",
+      "75 is greater than or equal to 50, so the condition is True and Python prints Pass.",
   },
 
   {
     id: 8,
 
-    question: "What will this code print? fruits = {'apple', 'banana'}; fruits.add('orange'); print(fruits)",
+    question: "What is the purpose of the else statement?",
 
     options: [
-      "A. Only apple and banana",
-      "B. apple, banana, and orange",
-      "C. An empty set",
-      "D. An error",
+      "A. To run code when the if condition is False",
+      "B. To run code when the if condition is True",
+      "C. To repeat an if statement",
+      "D. To create a variable",
     ],
 
-    answer: "B",
+    answer: "A",
 
     explanation:
-      "The add() method adds 'orange' to the existing set, so the set will contain apple, banana, and orange.",
+      "The else block runs when the condition checked by the if statement is False.",
   },
 
   {
     id: 9,
 
-    question: "Which keyword can be used to check if an item exists in a set?",
+    question: "What will this code print? score = 40; if score >= 50: print('Pass'); else: print('Fail')",
 
     options: [
-      "A. has",
-      "B. contains",
-      "C. in",
-      "D. exists",
+      "A. Pass",
+      "B. Fail",
+      "C. 40",
+      "D. Error",
     ],
 
-    answer: "C",
+    answer: "B",
 
     explanation:
-      "The 'in' keyword checks whether a value exists in a set. For example: 'apple' in fruits.",
+      "Since 40 is less than 50, the condition score >= 50 is False, so the else block runs and prints Fail.",
   },
 
   {
     id: 10,
 
-    question: "What is a Python dictionary?",
+    question: "Which keyword is used when there are multiple conditions to check?",
 
     options: [
-      "A. A collection of key-value pairs",
-      "B. A collection that only stores numbers",
-      "C. A programming function",
-      "D. A type of loop",
+      "A. multiple",
+      "B. elif",
+      "C. otherwise",
+      "D. check",
     ],
 
-    answer: "A",
+    answer: "B",
 
     explanation:
-      "A dictionary stores data as key-value pairs. For example: student = {'name': 'Favour', 'score': 85}.",
+      "elif means 'else if' and allows Python to check another condition when the previous if or elif condition was False.",
   },
 
   {
     id: 11,
 
-    question: "Which brackets are used to create a Python dictionary?",
+    question: "What will this code print? score = 75; if score >= 80: print('A'); elif score >= 70: print('B'); else: print('F')",
 
     options: [
-      "A. []",
-      "B. ()",
-      "C. {}",
-      "D. <>",
+      "A. A",
+      "B. B",
+      "C. F",
+      "D. 75",
     ],
 
-    answer: "C",
+    answer: "B",
 
     explanation:
-      "Python dictionaries are written using curly braces {} with keys and values separated by a colon.",
+      "75 is not greater than or equal to 80, but it is greater than or equal to 70. Therefore, the elif block prints B.",
   },
 
   {
     id: 12,
 
-    question: "In the dictionary below, what is 'name'? student = {'name': 'Favour', 'score': 85}",
+    question: "Which function is used to receive input from a user in Python?",
 
     options: [
-      "A. A value",
-      "B. A key",
-      "C. A function",
-      "D. A variable",
+      "A. get()",
+      "B. receive()",
+      "C. input()",
+      "D. user()",
     ],
 
-    answer: "B",
+    answer: "C",
 
     explanation:
-      "'name' is the key, while 'Favour' is its corresponding value.",
+      "The input() function allows a Python program to receive information entered by the user.",
   },
 
   {
     id: 13,
 
-    question: "How can you access Favour's score in this dictionary? student = {'name': 'Favour', 'score': 85}",
+    question: "Why do we use int() with input() when asking a user to enter a score?",
 
     options: [
-      "A. student[85]",
-      "B. student('score')",
-      "C. student['score']",
-      "D. student.score()",
-    ],
-
-    answer: "C",
-
-    explanation:
-      "Dictionary values are accessed using their keys inside square brackets. Therefore, student['score'] returns 85.",
-  },
-
-  {
-    id: 14,
-
-    question: "What will this code print? student = {'name': 'Favour', 'score': 85}; print(student['name'])",
-
-    options: [
-      "A. name",
-      "B. score",
-      "C. Favour",
-      "D. 85",
-    ],
-
-    answer: "C",
-
-    explanation:
-      "The key 'name' points to the value 'Favour', so student['name'] returns Favour.",
-  },
-
-  {
-    id: 15,
-
-    question: "How do you add a new key-value pair to a dictionary?",
-
-    options: [
-      "A. student.add('age', 16)",
-      "B. student['age'] = 16",
-      "C. student.append('age', 16)",
-      "D. student.insert('age', 16)",
-    ],
-
-    answer: "B",
-
-    explanation:
-      "A new dictionary item can be added by assigning a value to a new key, such as student['age'] = 16.",
-  },
-
-  {
-    id: 16,
-
-    question: "Which method is used to remove a specified key-value pair from a dictionary?",
-
-    options: [
-      "A. remove()",
-      "B. delete()",
-      "C. pop()",
-      "D. erase()",
-    ],
-
-    answer: "C",
-
-    explanation:
-      "The pop() method removes a specified key and its associated value. For example: student.pop('age').",
-  },
-
-  {
-    id: 17,
-
-    question: "Which dictionary method returns all the keys?",
-
-    options: [
-      "A. keys()",
-      "B. values()",
-      "C. items()",
-      "D. getkeys()",
+      "A. To convert the input into a whole number",
+      "B. To convert the input into a list",
+      "C. To print the input",
+      "D. To delete the input",
     ],
 
     answer: "A",
 
     explanation:
-      "The keys() method returns a view containing all the keys in a dictionary.",
+      "input() returns text. int() converts that text into a whole number so Python can perform numerical comparisons and calculations.",
   },
 
   {
-    id: 18,
+    id: 14,
 
-    question: "Which dictionary method returns all the values?",
+    question: "What will this code print? age = 20; if age >= 18: print('Adult')",
 
     options: [
-      "A. keys()",
-      "B. values()",
-      "C. items()",
-      "D. get()",
+      "A. Child",
+      "B. Adult",
+      "C. 18",
+      "D. Error",
     ],
 
     answer: "B",
 
     explanation:
-      "The values() method returns a view containing all the values in a dictionary.",
+      "The value of age is 20, which is greater than or equal to 18, so the condition is True and Adult is printed.",
   },
 
   {
-    id: 19,
+    id: 15,
 
-    question: "What does the items() method return from a dictionary?",
+    question: "Which logical operator requires both conditions to be True?",
 
     options: [
-      "A. Only the keys",
-      "B. Only the values",
-      "C. Key-value pairs",
-      "D. Only the first item",
+      "A. or",
+      "B. not",
+      "C. and",
+      "D. if",
     ],
 
     answer: "C",
 
     explanation:
-      "The items() method returns the dictionary's key-value pairs, which can be useful when looping through a dictionary.",
+      "The and operator returns True only when both conditions are True.",
   },
 
   {
-    id: 20,
+    id: 16,
 
-    question: "What will this code print? student = {'name': 'Favour', 'score': 85}; student['score'] = 90; print(student['score'])",
+    question: "Which logical operator is True when at least one of the conditions is True?",
 
     options: [
-      "A. 85",
-      "B. 90",
-      "C. score",
-      "D. An error",
+      "A. and",
+      "B. or",
+      "C. not",
+      "D. if",
     ],
 
     answer: "B",
 
     explanation:
-      "Assigning student['score'] = 90 updates the existing score from 85 to 90. Therefore, the program prints 90.",
+      "The or operator is True when at least one of the conditions being checked is True.",
+  },
+
+  {
+    id: 17,
+
+    question: "What does the not operator do?",
+
+    options: [
+      "A. Adds two values",
+      "B. Reverses a Boolean condition",
+      "C. Compares two numbers",
+      "D. Creates a new variable",
+    ],
+
+    answer: "B",
+
+    explanation:
+      "The not operator reverses a Boolean value. For example, not True becomes False, while not False becomes True.",
+  },
+
+  {
+    id: 18,
+
+    question: "What is a nested if statement?",
+
+    options: [
+      "A. An if statement inside another if statement",
+      "B. Two programs running at the same time",
+      "C. An if statement without a condition",
+      "D. An if statement inside a list",
+    ],
+
+    answer: "A",
+
+    explanation:
+      "A nested if is an if statement placed inside another if statement. It is useful when one decision depends on another decision.",
+  },
+
+  {
+    id: 19,
+
+    question: "What will this code print? age = 20; has_id = True; if age >= 18 and has_id: print('Access granted')",
+
+    options: [
+      "A. Access granted",
+      "B. Access denied",
+      "C. True",
+      "D. Error",
+    ],
+
+    answer: "A",
+
+    explanation:
+      "Both conditions are True: age is at least 18 and has_id is True. Since and requires both conditions to be True, Access granted is printed.",
+  },
+
+  {
+    id: 20,
+
+    question: "What will this program print if the user enters 85? score = int(input('Enter score: ')); if score >= 80: print('Excellent'); elif score >= 50: print('Pass'); else: print('Fail')",
+
+    options: [
+      "A. Excellent",
+      "B. Pass",
+      "C. Fail",
+      "D. Error",
+    ],
+
+    answer: "A",
+
+    explanation:
+      "The input 85 is converted to an integer using int(). Since 85 is greater than or equal to 80, the first condition is True and the program prints Excellent.",
   },
 ];
